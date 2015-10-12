@@ -22,8 +22,8 @@
     },
     {
       "name": "Alexis-Philippe",
-      "email": "",
-      "url": "https://cstl.io/"
+      "email": "alexis.philippe@gmail.com",
+      "url": ""
     }
   ],
   "devDependencies": {
@@ -34,5 +34,8 @@
   "dependencies": {
     "q": "~1.1.2",
     "redis": "^2.1.0"
+  },
+  "scripts": {
+    "test": "mocha ./tests/tests.js --ui tdd"
   }
 }
