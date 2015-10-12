@@ -1,6 +1,6 @@
 {
-  "name": "studentsphere-emails",
-  "description": "Student Sphere Email Module for Node.",
+  "name": "oregon-crossover",
+  "description": "Oregon code team management crossover",
   "version": "1.0.0",
   "main": "./src/index.js",
   "readmeFilename": "readme.md",
