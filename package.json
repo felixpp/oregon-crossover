@@ -1,0 +1,37 @@
+{
+  "name": "studentsphere-emails",
+  "description": "Student Sphere Email Module for Node.",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "readmeFilename": "readme.md",
+  "author": {
+    "name": "FourEach Solutions",
+    "email": "team@4each.ca",
+    "url": "http://4each.ca/"
+  },
+  "contributors": [
+    {
+      "name": "Joël Bourbonnais",
+      "email": "joel.bourbonnais@4each.ca",
+      "url": "https://cstl.io/"
+    },
+    {
+      "name": "Félix Perreault",
+      "email": "felix.perreault@4each.ca",
+      "url": ""
+    },
+    {
+      "name": "Alexis-Philippe",
+      "email": "",
+      "url": "https://cstl.io/"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0",
+    "should": "~4.3.0"
+  },
+  "dependencies": {
+    "q": "~1.1.2"
+  }
+}
