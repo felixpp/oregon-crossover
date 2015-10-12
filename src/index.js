@@ -13,9 +13,9 @@ module.exports.getBranches = function (account, apiVersion, includeChildren, inc
         "&includechildren=" + includeChildren + "&includedeleted=" + includeDeleted;
 
     var defer = Q.defer();
-    request.get(url, function(err, res){
+    request.get(url, function(err, res, body){
         if(res.statusCode == '203'){
-            defer.resolve(res);
+            defer.resolve({"err":err,"res": res,"body": body});
         } else {
             defer.reject(err.toString());
         }

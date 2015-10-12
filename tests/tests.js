@@ -27,7 +27,7 @@ describe('interact with TFS API', function() {
 
   it('should get branches', function(done){
     module.getBranches('jbourbonnais', '1.0', true, true).then(function (results) {
-
+      console.log(results.res);
     }, function (error) {
       error.should.not.be.ok;
     }).done(function(){
