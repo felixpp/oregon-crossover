@@ -9,6 +9,8 @@ describe('interact with our server', function() {
         server.listen(8000);
       });
 
+      body.should.equal('Hello World\n');
+
       after(function(){
         server.close();
       });
