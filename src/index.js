@@ -19,7 +19,6 @@ module.exports.getBranches = function (account, apiVersion, includeChildren, inc
         } else {
             defer.reject(err.toString());
         }
-
     });
 
     return defer.promise;
