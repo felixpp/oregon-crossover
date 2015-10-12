@@ -34,7 +34,8 @@
   "dependencies": {
     "q": "~1.1.2",
     "redis": "^2.1.0",
-    "request": "*"
+    "request": "*",
+    "express": "*"
   },
   "scripts": {
     "test": "mocha ./tests/tests.js --ui tdd",

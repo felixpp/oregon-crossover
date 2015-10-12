@@ -1,14 +1,18 @@
 // ./src/server.js
+var sys = require('util'),
+fs = require('fs'),
+http = require('http'),
+url = require('url');
+var express = require('express');
+var app = express();
 
-var http = require('http');
-
-var server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World\n");
+app.get('/', function (req, res) {
+  res.send('Hello World\n');
 });
 
-// Listen on port 8000, IP defaults to 127.0.0.1
-server.listen(8000);
+var server = app.listen(8000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
 
-// Put a friendly message on the terminal
-console.log("Server running at http://127.0.0.1:8000/");
+  console.log('Example app listening at http://%s:%s', host, port);
+});

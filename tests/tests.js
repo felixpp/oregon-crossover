@@ -11,9 +11,11 @@ describe('interact with our server', function() {
       });
 
       body.should.equal('Hello World\n');
+      res.statusCode.should.equal(200);
+      done();
 
       after(function(){
-        server.close();
+        // server.close();
       });
     });
   });
