@@ -38,7 +38,6 @@ describe('interact with our server', function() {
       done();
     });
   });
-
 });
 
 describe('interact with TFS API', function() {

@@ -24,7 +24,7 @@ module.exports.getBranches = function (account, apiVersion, includeChildren, inc
         'auth': {
             'username': connectionInfo.user,
             'password': connectionInfo.password,
-            'sendImmediately': false
+            'sendImmediately': true
         }
     }, function(err, res, body){
         if(res.statusCode == '200') {
