@@ -37,6 +37,7 @@
     "request": "*"
   },
   "scripts": {
-    "test": "mocha ./tests/tests.js --ui tdd"
+    "test": "mocha ./tests/tests.js --ui tdd",
+    "start": "node ./src/server.js"
   }
 }
