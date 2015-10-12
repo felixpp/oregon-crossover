@@ -15,6 +15,30 @@ describe('interact with our server', function() {
       done();
     });
   });
+
+  it('should 404 on bad routes',function(done) {
+    request.get('http://localhost:8000/notARealRoute', function (err,res,body){
+      before(function() {
+        server.listen(8000);
+      });
+
+      res.statusCode.should.equal(404);
+      done();
+    });
+  });
+
+  it('should have routes',function(done){
+    request.get('http://localhost:8000/authOnTFS', function (err,res,body){
+      before(function() {
+        server.listen(8000);
+      });
+
+      body.should.not.equal('Hello World\n');
+      res.statusCode.should.equal(200);
+      done();
+    });
+  });
+
 });
 
 describe('interact with TFS API', function() {
