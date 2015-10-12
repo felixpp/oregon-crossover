@@ -10,6 +10,7 @@ describe('interact with our server', function() {
       });
 
       body.should.equal('Hello World\n');
+      done();
 
       after(function(){
         server.close();
