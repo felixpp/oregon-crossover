@@ -1,0 +1,45 @@
+{
+  "name": "oregon-crossover",
+  "description": "Oregon code team management crossover",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "readmeFilename": "readme.md",
+  "author": {
+    "name": "FourEach Solutions",
+    "email": "team@4each.ca",
+    "url": "http://4each.ca/"
+  },
+  "contributors": [
+    {
+      "name": "Joël Bourbonnais",
+      "email": "joel.bourbonnais@4each.ca",
+      "url": "https://cstl.io/"
+    },
+    {
+      "name": "Félix Perreault",
+      "email": "felix.perreault@4each.ca",
+      "url": ""
+    },
+    {
+      "name": "Alexis-Philippe",
+      "email": "alexis.philippe@gmail.com",
+      "url": ""
+    }
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0",
+    "should": "~4.3.0"
+  },
+  "dependencies": {
+    "q": "~1.1.2",
+    "redis": "^2.1.0",
+    "request": "*",
+    "express": "*",
+    "fs": "*"
+  },
+  "scripts": {
+    "test": "mocha ./tests/tests.js --ui tdd",
+    "start": "node ./src/server.js"
+  }
+}
